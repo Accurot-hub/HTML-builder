@@ -11,6 +11,7 @@ stdin.on("data", (data) => {
     const input = data.toString().trim();
 
     if (input.toLowerCase() === "exit") {
+        stdout.write("Bye bye");
         process.exit();
     } else {
         output.write(`${input}\n`);
